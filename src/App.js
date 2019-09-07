@@ -59,7 +59,7 @@ class App extends Component{
   }
 
   render(){
-    const {otp, otpSuccess, userCode, forgotBtn} = this.state
+    const {otp, otpSuccess, userCode, forgotBtn, confirmPass, password} = this.state
     return (
       <div className="App">
         <Switch>
@@ -81,8 +81,12 @@ class App extends Component{
           </div>}
           {otp &&
           <>
-            <input type='text' value={userCode} onChange={this.handleChange} name='userCode' />
-            <button onClick={this.useOtp}>Reset</button>
+            <div className='loginApp'>
+              <input type='text' value={userCode} onChange={this.handleChange} name='userCode' autoFocus={true} placeholder='Enter the code'/>
+              <input type='password' value={password} onChange={this.handleChange} name='password' placeholder='Enter Password'/>
+              <input type='password' value={confirmPass} onChange={this.handleChange} name='confirmPass' placeholder='Confirm Password'/>
+              <button onClick={this.useOtp}>Reset</button>
+            </div>
           </>}
         </>}
       </div>

@@ -23,11 +23,12 @@ body, #root, .App{
   border: 2px solid gray;
   border-radius: 5px;
   height: 4%;
-  font-size: 18px;
-    padding: 0 5px;
+  font-size: 22px;
+  padding: 0 5px;
+  box-shadow: 0 0 2px black;
 }
 .loginApp button{
-  background: #ff8b00;
+  background: gray;
   position: absolute;
   right: 29.7%;
   height: 4.3%;
