@@ -16,6 +16,15 @@ body, #root, .App{
   align-items: center;
   height: 100%;
 }
+.loginApp2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.loginApp2 input,
 .loginApp input{
   width: 40%;
   background: transparent;
@@ -26,12 +35,11 @@ body, #root, .App{
   font-size: 22px;
   padding: 0 5px;
   box-shadow: 0 0 2px black;
+  margin-bottom: 10px;
 }
 .loginApp button{
   background: gray;
-  position: absolute;
-  right: 29.7%;
-  height: 4.3%;
+  height: 4.45%;
   border: 2px solid gray;
   color: white;
   border-top-right-radius: 3px;
@@ -41,9 +49,48 @@ body, #root, .App{
   outline: none;
   font-family: montserrat;
   font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: -5px;
+  box-shadow: 0 0 2px black;
+}
+.loginApp2 p{
+    width: 40%;
+    font-size: 22px;
+    background: #ad2f2f;
+    color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.loginApp2 button{
+  background: gray;
+  height: 4.3%;
+  border: 2px solid gray;
+  color: white;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 23px;
+  width: 41%;
+  outline: none;
+  font-family: 'montserrat';
+  font-weight: 500;
+  border-radius: 5px
+}
+.loginApp2 a{
+  color: white;
+  text-decoration: none;
 }
 .fotgotPass{
   font-size: 40px;
     color: #444;
     text-shadow: 0 0 2px black;
+}
+.welcomeBack{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
