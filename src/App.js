@@ -72,10 +72,10 @@ class App extends Component{
           }/>
           <Route path='/login' Component={Home} />
         </Switch>
-        {forgotBtn && !otp ? <>
+        {forgotBtn && !otp ? <h2 className='fotgotPass' onClick={() => {this.setState({forgotBtn: false})}}>Forgot Password?</h2> : <>
           {!otp && 
           <div className='loginApp'>
-            <input onChange={this.handleChange} name='phoneNumber' type='tel' value={this.state.phoneNumber} placeholder='Enter your phone number' />
+            <input onChange={this.handleChange} name='phoneNumber' type='tel' value={this.state.phoneNumber} autoFocus={true} placeholder='Enter your phone number' />
             <button onClick={this.phoneValidation}>Login</button>
             <div id="recaptcha-container"></div>
           </div>}
@@ -84,7 +84,7 @@ class App extends Component{
             <input type='text' value={userCode} onChange={this.handleChange} name='userCode' />
             <button onClick={this.useOtp}>Reset</button>
           </>}
-        </> : <h2 onClick={() => {this.setState({forgotBtn: false})}}>Forgot Password?</h2>}
+        </>}
       </div>
     );
   }

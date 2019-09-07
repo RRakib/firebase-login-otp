@@ -41,3 +41,8 @@ body, #root, .App{
   font-family: montserrat;
   font-weight: 500;
 }
+.fotgotPass{
+  font-size: 40px;
+    color: #444;
+    text-shadow: 0 0 2px black;
+}
